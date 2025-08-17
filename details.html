@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <section class="detail-section">
+    <h1>{{ item.name }}</h1>
+    <p><strong>Category:</strong> {{ item.category }}</p>
+    <p>{{ item.description }}</p>
+    
+    <div class="detail-image">
+      <img src="{{ url_for('static', filename='images/' ~ item.image) }}" alt="{{ item.name }}">
+    </div>
+  </section>
+{% endblock %}
+

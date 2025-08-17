@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <section id="productions">
+    <h1>Our Productions</h1>
+    <ul>
+      {% for p in productions %}
+        <li>
+          <a href="{{ url_for('item_detail', item_id=p.id) }}">
+            {{ p.name }} — {{ p.category }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section id="services">
+    <h1>Our Services</h1>
+    <ul>
+      {% for s in services %}
+        <li>
+          <a href="{{ url_for('item_detail', item_id=s.id) }}">
+            {{ s.name }} — {{ s.category }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section id="stories">
+    <h1>Featured Stories</h1>
+    <ul>
+      {% for st in stories %}
+        <li>
+          <a href="{{ url_for('item_detail', item_id=st.id) }}">
+            {{ st.name }} — {{ st.category }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endblock %}
+

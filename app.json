@@ -1,0 +1,94 @@
+[
+  {
+    "id": 1,
+    "name": "Artificial Intelligence",
+    "category": "Production",
+    "description": "AI-driven innovations for automation, business intelligence, and creative storytelling.",
+    "image": "ai.jpg"
+  },
+  {
+    "id": 2,
+    "name": "VFX",
+    "category": "Production",
+    "description": "Cinematic visual effects, wall posters, and stunning motion graphics.",
+    "image": "vfx.jpg"
+  },
+  {
+    "id": 3,
+    "name": "2D Animation",
+    "category": "Production",
+    "description": "Creative 2D animation for storytelling, education, and entertainment.",
+    "image": "2d.jpg"
+  },
+  {
+    "id": 4,
+    "name": "3D Animation",
+    "category": "Production",
+    "description": "High-quality 3D animation for films, ads, and visual simulations.",
+    "image": "3d.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Life Book",
+    "category": "Service",
+    "description": "Personalized digital books capturing stories, memories, and legacies.",
+    "image": "lifebook.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Student Bank",
+    "category": "Service",
+    "description": "A platform designed for students to learn, save, and grow financially.",
+    "image": "studentbank.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Financial Literacy",
+    "category": "Service",
+    "description": "Interactive programs to empower financial awareness and money management.",
+    "image": "finance.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Ad Films",
+    "category": "Service",
+    "description": "Creative ad films blending storytelling and visual magic.",
+    "image": "adfilms.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Sri Satya Sai Life Story",
+    "category": "Stories",
+    "description": "A spiritual journey capturing the inspiring life of Sri Satya Sai.",
+    "image": "srisatya.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Prabhas Latest Previews",
+    "category": "Stories",
+    "description": "Exclusive previews of upcoming films from superstar Prabhas.",
+    "image": "prabhas.jpg"
+  },
+  {
+    "id": 11,
+    "name": "The Book Of Miracle",
+    "category": "Stories",
+    "description": "A powerful narrative capturing untold miracles and real stories.",
+    "image": "miracle.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Vegan Stories",
+    "category": "Stories",
+    "description": "Documentaries and narratives on vegan lifestyle and awareness.",
+    "image": "vegan.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Balayya Latest Previews",
+    "category": "Stories",
+    "description": "Special previews of Balakrishna’s latest projects.",
+    "image": "balayya.jpg"
+  }
+]
+

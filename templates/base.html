@@ -1,0 +1,134 @@
+</a>
+<div>
+  <a class="link" href="{{ url_for('index') }}">Home</a>
+  <a class="link" href="#hero_section">Pixell.AI</a>
+  <a class="link" href="#productions">Productions</a>
+  <a class="link" href="#video_upload">Video Upload</a>
+  <a class="link" href="#vfx">VFX</a>
+  <a class="link" href="#locations">Locations</a>
+  <a class="link" href="#services">Services</a>
+  <a class="link" href="#stories">Stories</a>
+</div>
+</div>
+</nav>
+
+{% block announcement %}
+<!-- Hero / Announcement section -->
+<section id="hero_section" role="region" aria-label="Pixell.AI">
+  <div class="container announce-wrap">
+    <div>
+      <span class="pill"><span class="ping" aria-hidden="true"></span> Since 2014</span>
+      <h1 class="title">Pixell.AI</h1>
+      <p class="subtitle">Visualize Your Idea — Innovation in Artificial Intelligence, VFX & Storytelling.</p>
+
+      <div class="cta-row">
+        <a class="btn" href="#productions">Explore Productions</a>
+        <a class="btn secondary" href="#about">About Us</a>
+        <button id="dismissAnnouncement" class="dismiss" type="button" aria-label="Dismiss section">Dismiss</button>
+      </div>
+
+      <div class="announce-card glass" role="status" aria-live="polite">
+        <span class="dot" aria-hidden="true"></span>
+        <p><strong>Latest:</strong> New VFX previews & Life Book projects are now live.</p>
+      </div>
+    </div>
+
+    <div class="media">
+      <div class="img-wrap glass">
+        <img src="{{ url_for('static', filename='images/wonder1.jpg') }}" alt="Pixell.AI showcase image" />
+      </div>
+      <div class="badge">Pixell.AI</div>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+<main class="container">
+  {% block content %}
+  
+  <!-- Second Scroll: Flip Productions -->
+  <section id="productions">
+    <h2>Our Productions</h2>
+    <div class="flip-cards">
+      <div class="card">Artificial Intelligence</div>
+      <div class="card">VFX</div>
+      <div class="card">2D Animation</div>
+      <div class="card">3D Animation</div>
+      <div class="card">Life Book</div>
+      <div class="card">Student Bank</div>
+      <div class="card">Financial Literacy</div>
+    </div>
+  </section>
+
+  <!-- Third Scroll: Video Upload -->
+  <section id="video_upload">
+    <h2>Upload Your Video</h2>
+    <p>Share your creations and let Pixell.AI bring them to life.</p>
+    <input type="file" />
+  </section>
+
+  <!-- Fourth Scroll: VFX -->
+  <section id="vfx">
+    <h2>VFX & Wall Posters</h2>
+    <p>Experience cinematic visuals and creative posters.</p>
+    <!-- Gallery / videos go here -->
+  </section>
+
+  <!-- Fifth Scroll: Locations -->
+  <section id="locations">
+    <h2>Our Global Presence</h2>
+    <p>Head Office: Hyderabad | Branches: Bangalore, Mumbai, Vizag, Dubai, USA, UK, Canada</p>
+    <!-- Interactive map can go here -->
+  </section>
+
+  <!-- Sixth Scroll: Services -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Life Book</li>
+      <li>Student Bank</li>
+      <li>Financial Literacy</li>
+      <li>Ad Films</li>
+    </ul>
+  </section>
+
+  <!-- Seventh Scroll: Featured Stories -->
+  <section id="stories">
+    <h2>Featured Stories</h2>
+    <ul>
+      <li>Sri Satya Sai Life Story</li>
+      <li>Prabhas Latest Previews</li>
+      <li>The Book Of Miracle</li>
+      <li>Vegan Stories</li>
+      <li>Balayya Latest Previews</li>
+    </ul>
+  </section>
+
+  {% endblock %}
+</main>
+
+<footer>
+  <div class="container">
+    <small>© {{ now().year if callable(globals().get('now')) else '' }} Pixell.AI (Pixel-i.in). Built with Flask.</small>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    const key = "hide_hero_v1";
+    const section = document.getElementById("hero_section");
+    const btn = document.getElementById("dismissAnnouncement");
+    try {
+      if (localStorage.getItem(key) === "1") {
+        section.style.display = "none";
+      }
+    } catch (e) {}
+    if (btn) btn.addEventListener("click", function(){
+      section.style.display = "none";
+      try { localStorage.setItem(key, "1"); } catch (e) {}
+    });
+  })();
+</script>
+</body>
+</html>
+
